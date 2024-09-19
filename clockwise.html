@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traverse Computation</title>
+    <link rel="stylesheet" href="clockwise.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="kulogo.png" alt="Logo" class="logo">
+            <h1>Traverse Computation</h1>
+        </div>
+    </header>
+
+    <section class="coordinates-section">
+        <h2>Calculate Bearing Between Two Known Stations</h2>
+        <div class="coordinates-container">
+            <label for="myknownX1">First station X-coordinate:</label>
+            <input type="number" id="myknownX1" placeholder="Enter X1">
+
+            <label for="myknownY1">First station Y-coordinate:</label>
+            <input type="number" id="myknownY1" placeholder="Enter Y1">
+
+            <label for="myknownX2">Second station X-coordinate:</label>
+            <input type="number" id="myknownX2" placeholder="Enter X2">
+
+            <label for="myknownY2">Second station Y-coordinate:</label>
+            <input type="number" id="myknownY2" placeholder="Enter Y2">
+
+            <button id="bearing">Calculate Bearing</button>
+            <p id="bearingresult"></p>
+        </div>
+    </section>
+
+    <section class="angles-section">
+        <h2>Enter Number of Angles for Traverse</h2>
+        <div class="angles-container">
+            <label for="myinputnumber1">Number of Angles:</label>
+            <input type="number" id="myinputnumber1" placeholder="Enter number of angles">
+            <button id="submitbutton1">Submit</button>
+            
+            <p id="nresult"><br></p>
+            
+            <div id="inputboxAngles">
+                <table id="anglesTable">
+                    <thead>
+                        <tr>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows will be inserted dynamically here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+        <h3>Contact Info</h3>
+        <br>
+        <p>gaurav14823@gmail.com</p>
+        <br>
+        <p>Phone no:99999999</p>
+        <br>
+        <p>&copy; 2024 Traverse Computation</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
